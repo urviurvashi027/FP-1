@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header><p>Table Data</p></header>
+<div class="flexContainer">
+    <div class="item-1">
+        <input type="text" placeholder="Search.." id="search" onkeyup="searchTable(event)"/>
+    </div>
+    <div class="item-2">
+        <input type="checkbox" onchange="showSelected('checkbox',event)"/>
+        <label>Show Selected</label>
+    </div>
+</div>
+<table id="data"></table>
+<button onclick="showSelected('button',event)">Done</button>
+<script src="./main.js" defer></script>
+</body>
+</html>
